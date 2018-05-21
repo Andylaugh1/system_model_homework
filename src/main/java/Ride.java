@@ -61,4 +61,8 @@ public abstract class Ride {
             if (customer.getMoney() >= getCost())
                 this.riders.add(customer);
     }
+
+//    public void customerPayForRide(Customer customer) {
+//        customerMoney = customer.getMoney() -=getCost();
+//    }
 }

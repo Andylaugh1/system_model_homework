@@ -22,4 +22,10 @@ public class Customer {
     public int getMoney() {
         return this.money;
     }
+
+//    public void payForRide(Ride ride){
+//        int money = getMoney();
+//        money -= ride.getCost();
+//
+//    }
 }

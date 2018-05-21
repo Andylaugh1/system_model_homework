@@ -6,10 +6,12 @@ import static org.junit.Assert.assertEquals;
 public class CustomerTest {
 
     Customer customer;
+    Teacups teacups;
 
     @Before
     public void before(){
-        customer = new Customer("Eilidh", 70, 5);
+        customer = new Customer("Eilidh", 70, 10);
+        teacups = new Teacups(4, 60, "Kiddie", 2, 12);
     }
 
     @Test
@@ -24,6 +26,12 @@ public class CustomerTest {
 
     @Test
     public void canGetMoney(){
-        assertEquals(5, customer.getMoney());
+        assertEquals(10, customer.getMoney());
     }
+
+//    @Test
+//    public void canPayForRide(){
+//        customer.payForRide(teacups);
+//        assertEquals(6, customer.getMoney());
+//    }
 }
