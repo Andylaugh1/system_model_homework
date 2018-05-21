@@ -62,7 +62,7 @@ public abstract class Ride {
                 this.riders.add(customer);
     }
 
-//    public void customerPayForRide(Customer customer) {
-//        customerMoney = customer.getMoney() -=getCost();
-//    }
+    public void finishRide(){
+        this.riders.clear();
+    }
 }

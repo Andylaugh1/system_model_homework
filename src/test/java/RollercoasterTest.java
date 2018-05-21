@@ -64,4 +64,12 @@ public class RollercoasterTest {
         rollercoaster.checkCustomerOntoRide(customer);
         assertEquals(1, rollercoaster.countRiders());
     }
+
+
+    @Test
+    public void canfinishRide(){
+        rollercoaster.checkCustomerOntoRide(customer);
+        rollercoaster.finishRide();
+        assertEquals(0, rollercoaster.countRiders());
+    }
 }

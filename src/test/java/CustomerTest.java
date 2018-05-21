@@ -29,9 +29,9 @@ public class CustomerTest {
         assertEquals(10, customer.getMoney());
     }
 
-//    @Test
-//    public void canPayForRide(){
-//        customer.payForRide(teacups);
-//        assertEquals(6, customer.getMoney());
-//    }
+    @Test
+    public void canPayForRide(){
+        customer.payForRide(teacups);
+        assertEquals(6, customer.getMoney());
+    }
 }

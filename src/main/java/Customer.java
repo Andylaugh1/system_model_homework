@@ -23,9 +23,8 @@ public class Customer {
         return this.money;
     }
 
-//    public void payForRide(Ride ride){
-//        int money = getMoney();
-//        money -= ride.getCost();
-//
-//    }
+    public void payForRide(Ride ride){
+        money -= ride.getCost();
+
+    }
 }
